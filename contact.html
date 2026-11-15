@@ -1,1 +1,346 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071522">
+<title>Contact Us | Nova Radiology</title>
+
+<style>
+:root{
+--bg:#071522;
+--panel:#102538;
+--cyan:#43d5e8;
+--white:#f4f8fc;
+--muted:#a7bac9;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+background:var(--bg);
+color:var(--white);
+font-family:Arial,sans-serif;
+line-height:1.7;
+}
+a{text-decoration:none;color:inherit}
+.container{width:88%;max-width:1100px;margin:auto}
+
+nav{
+background:#091b29;
+border-bottom:1px solid #234258;
+}
+.nav{
+min-height:75px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:12px;
+}
+.logo{font-size:19px;font-weight:800;letter-spacing:1px}
+.logo span{color:var(--cyan)}
+.links{display:flex;gap:18px;font-size:13px}
+.links a:hover{color:var(--cyan)}
+
+.hero{
+padding:85px 0;
+background:radial-gradient(ellipse at 85% 40%,#16475b,transparent 55%),#091b29;
+}
+.label{
+color:var(--cyan);
+font-size:12px;
+letter-spacing:2px;
+font-weight:bold;
+}
+h1{
+font-size:clamp(40px,7vw,65px);
+line-height:1.15;
+margin:20px 0;
+}
+h1 span{color:var(--cyan)}
+p{color:var(--muted)}
+
+section{padding:75px 0}
+h2{font-size:32px;margin:12px 0 20px}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1.2fr;
+gap:30px;
+align-items:start;
+}
+
+.info-card,.form-card{
+background:var(--panel);
+border:1px solid #234258;
+border-radius:12px;
+padding:28px;
+}
+.info-item{
+padding:17px 0;
+border-bottom:1px solid #294254;
+}
+.info-item:last-child{border:0}
+.info-item strong{
+display:block;
+color:var(--cyan);
+margin-bottom:5px;
+}
+.info-item p{font-size:14px}
+
+form{margin-top:20px}
+.field{margin-bottom:17px}
+label{
+display:block;
+margin-bottom:7px;
+font-size:13px;
+font-weight:bold;
+}
+input,textarea,select{
+width:100%;
+padding:14px;
+background:#071522;
+border:1px solid #365267;
+border-radius:6px;
+color:white;
+font:inherit;
+font-size:14px;
+outline:none;
+}
+input:focus,textarea:focus,select:focus{
+border-color:var(--cyan);
+}
+textarea{min-height:125px;resize:vertical}
+select option{background:#071522}
+
+.btn{
+display:inline-block;
+background:var(--cyan);
+color:#071522;
+padding:13px 22px;
+border:0;
+border-radius:6px;
+font-weight:bold;
+cursor:pointer;
+}
+button:disabled{opacity:.7;cursor:wait}
+
+.notice{
+display:none;
+padding:14px;
+margin-top:15px;
+border:1px solid #43d5e8;
+border-radius:7px;
+color:var(--cyan);
+font-size:14px;
+}
+
+.dark{background:#0b1d2c}
+.contact-note{
+max-width:700px;
+margin:auto;
+text-align:center;
+}
+.cta{
+background:#0c2233;
+text-align:center;
+}
+.cta p{max-width:600px;margin:auto}
+
+footer{
+background:#040d16;
+padding:30px 0;
+font-size:12px;
+}
+.footer{
+display:flex;
+justify-content:space-between;
+gap:15px;
+flex-wrap:wrap;
+}
+
+@media(max-width:700px){
+.nav{flex-wrap:wrap;padding:15px 0}
+.links{gap:12px;font-size:11px}
+.contact-grid{grid-template-columns:1fr}
+section{padding:55px 0}
+.hero{padding:65px 0}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="container nav">
+<a class="logo" href="index.html">NOVA<span>.</span> RADIOLOGY</a>
+<div class="links">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="team.html">Team</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+</nav>
+
+<header class="hero">
+<div class="container">
+<span class="label">GET IN TOUCH</span>
+<h1>Let's Start a <span>Conversation.</span></h1>
+<p>
+Have a question or want to discuss healthcare
+collaboration? Send us an enquiry.
+</p>
+</div>
+</header>
+
+<section>
+<div class="container contact-grid">
+
+<div>
+<span class="label">CONTACT INFORMATION</span>
+<h2>Connect With Nova Radiology</h2>
+<p>
+We welcome enquiries from hospitals,
+healthcare providers and potential partners.
+</p>
+
+<div class="info-card" style="margin-top:25px">
+
+<div class="info-item">
+<strong>✉ Email</strong>
+<p>Email address will be added soon.</p>
+</div>
+
+<div class="info-item">
+<strong>☎ Phone</strong>
+<p>Contact number will be added soon.</p>
+</div>
+
+<div class="info-item">
+<strong>⌖ Location</strong>
+<p>Business address will be added soon.</p>
+</div>
+
+<div class="info-item">
+<strong>◷ Business Hours</strong>
+<p>Working hours will be announced soon.</p>
+</div>
+
+</div>
+</div>
+
+<div class="form-card">
+<span class="label">SEND AN ENQUIRY</span>
+<h2>How Can We Help?</h2>
+<p>Complete the form below to prepare your enquiry.</p>
+
+<form id="contactForm">
+
+<div class="field">
+<label for="name">Full Name *</label>
+<input id="name" name="name" type="text"
+placeholder="Enter your name" required>
+</div>
+
+<div class="field">
+<label for="email">Email Address *</label>
+<input id="email" name="email" type="email"
+placeholder="Enter your email" required>
+</div>
+
+<div class="field">
+<label for="organisation">Organisation</label>
+<input id="organisation" name="organisation"
+type="text" placeholder="Hospital or organisation">
+</div>
+
+<div class="field">
+<label for="subject">Enquiry Type *</label>
+<select id="subject" name="subject" required>
+<option value="">Select an enquiry type</option>
+<option>General Enquiry</option>
+<option>Hospital Collaboration</option>
+<option>Radiology Services</option>
+<option>Business Partnership</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="field">
+<label for="message">Your Message *</label>
+<textarea id="message" name="message"
+placeholder="Write your message here..."
+required></textarea>
+</div>
+
+<button class="btn" type="submit" id="submitBtn">
+Prepare Enquiry →
+</button>
+
+<div class="notice" id="notice" role="status">
+Your enquiry has been prepared.
+This demonstration form does not transmit or
+store information. A secure submission service
+will be connected later.
+</div>
+
+</form>
+</div>
+
+</div>
+</section>
+
+<section class="dark">
+<div class="container contact-note">
+<span class="label">OUR COMMITMENT</span>
+<h2>Professional Communication. Better Collaboration.</h2>
+<p>
+We aim to build meaningful connections with
+healthcare providers through professional
+communication and responsible collaboration.
+</p>
+</div>
+</section>
+
+<section class="cta">
+<div class="container">
+<span class="label">NOVA RADIOLOGY</span>
+<h2>Explore Our Services</h2>
+<p>
+Learn more about our diagnostic imaging
+service categories and professional approach.
+</p>
+<a class="btn" href="services.html">Explore Services →</a>
+</div>
+</section>
+
+<footer>
+<div class="container footer">
+<a class="logo" href="index.html">NOVA<span>.</span> RADIOLOGY</a>
+<p>© 2026 Nova Radiology. All rights reserved.</p>
+</div>
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit",function(e){
+e.preventDefault();
+if(!this.reportValidity()) return;
+
+const btn=document.getElementById("submitBtn");
+btn.disabled=true;
+btn.textContent="Enquiry Prepared";
+
+document.getElementById("notice").style.display="block";
+this.reset();
+
+setTimeout(()=>{
+btn.disabled=false;
+btn.textContent="Prepare Enquiry →";
+},2500);
+});
+</script>
+
+</body>
+</html>
+
