@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071522">
+<title>About Us | Nova Radiology</title>
+<style>
+:root {
+ --bg:#071522;
+ --panel:#102538;
+ --cyan:#43d5e8;
+ --white:#f4f8fc;
+ --muted:#a7bac9;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+ background:var(--bg);color:var(--white);
+ font-family:Arial,sans-serif;line-height:1.7;
+}
+a{color:inherit;text-decoration:none}
+.container{width:88%;max-width:1100px;margin:auto}
+
+nav{
+ background:#091b29;
+ border-bottom:1px solid #234258;
+ position:sticky;top:0;z-index:10;
+}
+.nav{
+ min-height:75px;display:flex;
+ justify-content:space-between;
+ align-items:center;gap:15px;
+}
+.logo{font-size:19px;font-weight:800;letter-spacing:1px}
+.logo span{color:var(--cyan)}
+.links{display:flex;gap:23px;font-size:13px}
+.links a:hover{color:var(--cyan)}
+
+.hero{
+ padding:100px 0;
+ background:radial-gradient(ellipse at 85% 40%,#16475b,transparent 55%),#091b29;
+}
+.label{
+ color:var(--cyan);font-size:12px;
+ letter-spacing:2px;font-weight:bold;
+}
+h1{font-size:clamp(40px,7vw,65px);line-height:1.15;margin:22px 0}
+h1 span{color:var(--cyan)}
+.hero p,.intro p,.value p{color:var(--muted);max-width:680px}
+.btn{
+ display:inline-block;margin-top:25px;
+ background:var(--cyan);color:#071522;
+ padding:12px 22px;border-radius:6px;
+ font-weight:bold;
+}
+section{padding:80px 0}
+h2{font-size:clamp(28px,4vw,40px);margin:12px 0 20px}
+.intro-grid{
+ display:grid;grid-template-columns:1fr 1fr;
+ gap:40px;align-items:center;
+}
+.visual{
+ min-height:300px;border-radius:15px;
+ background:radial-gradient(circle,#205b70,#102538 70%);
+ display:grid;place-items:center;
+ font-size:100px;border:1px solid #286078;
+}
+.intro p{margin:15px 0}
+.dark{background:#0b1d2c}
+.values{
+ display:grid;grid-template-columns:repeat(3,1fr);
+ gap:18px;margin-top:30px;
+}
+.card{
+ padding:25px;background:var(--panel);
+ border:1px solid #234258;border-radius:12px;
+}
+.card .icon{font-size:30px;color:var(--cyan)}
+.card h3{margin:12px 0}
+.card p{font-size:14px;color:var(--muted)}
+.cta{text-align:center;background:#0c2233}
+.cta p{color:var(--muted);max-width:600px;margin:auto}
+footer{background:#040d16;padding:30px 0;color:var(--muted);font-size:12px}
+.footer{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+
+@media(max-width:650px){
+ .links{gap:12px;font-size:11px}
+ .intro-grid{grid-template-columns:1fr}
+ .values{grid-template-columns:1fr}
+ .hero{padding:75px 0}
+ section{padding:60px 0}
+}
+</style>
+</head>
+<body>
+
+<nav>
+ <div class="container nav">
+  <a class="logo" href="index.html">NOVA<span>.</span> RADIOLOGY</a>
+  <div class="links">
+   <a href="index.html">Home</a>
+   <a href="about.html">About</a>
+   <a href="index.html#services">Services</a>
+   <a href="index.html#contact">Contact</a>
+  </div>
+ </div>
+</nav>
+
+<header class="hero">
+ <div class="container">
+  <span class="label">WHO WE ARE</span>
+  <h1>About <span>Nova Radiology</span></h1>
+  <p>
+   Connecting diagnostic imaging, professional expertise
+   and modern healthcare technology through a
+   patient-focused vision.
+  </p>
+  <a href="index.html#contact" class="btn">Connect With Us →</a>
+ </div>
+</header>
+
+<section>
+ <div class="container intro-grid">
+  <div class="visual">✚</div>
+  <div class="intro">
+   <span class="label">OUR STORY</span>
+   <h2>A Modern Vision for Diagnostic Imaging</h2>
+   <p>
+    Nova Radiology is a healthcare website concept
+    focused on diagnostic imaging and collaboration
+    between healthcare providers.
+   </p>
+   <p>
+    We believe technology and professional expertise
+    can help support efficient diagnostic workflows
+    and improve access to imaging services.
+   </p>
+  </div>
+ </div>
+</section>
+
+<section class="dark">
+ <div class="container">
+  <span class="label">OUR PURPOSE</span>
+  <h2>Mission, Vision & Values</h2>
+  <div class="values">
+   <div class="card">
+    <div class="icon">◎</div>
+    <h3>Our Mission</h3>
+    <p>
+     To support healthcare providers through
+     accessible diagnostic imaging solutions
+     and professional collaboration.
+    </p>
+   </div>
+   <div class="card">
+    <div class="icon">✧</div>
+    <h3>Our Vision</h3>
+    <p>
+     To contribute to a connected healthcare
+     ecosystem through responsible use of
+     technology and expertise.
+    </p>
+   </div>
+   <div class="card">
+    <div class="icon">✚</div>
+    <h3>Our Values</h3>
+    <p>
+     Professionalism, responsibility, collaboration,
+     transparency and a commitment to quality.
+    </p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="container">
+  <span class="label">OUR APPROACH</span>
+  <h2>Technology With Purpose</h2>
+  <div class="values">
+   <div class="card">
+    <h3>Professional Expertise</h3>
+    <p>Respect for qualified medical professionals and their clinical responsibilities.</p>
+   </div>
+   <div class="card">
+    <h3>Modern Technology</h3>
+    <p>Using digital tools to support efficient healthcare workflows.</p>
+   </div>
+   <div class="card">
+    <h3>Collaboration</h3>
+    <p>Building strong working relationships with healthcare providers.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="cta">
+ <div class="container">
+  <span class="label">LET'S CONNECT</span>
+  <h2>Be Part of Better Healthcare Connections</h2>
+  <p>
+   Contact us to discuss healthcare collaboration
+   and diagnostic imaging requirements.
+  </p>
+  <a href="index.html#contact" class="btn">Contact Our Team →</a>
+ </div>
+</section>
+
+<footer>
+ <div class="container footer">
+  <a class="logo" href="index.html">NOVA<span>.</span> RADIOLOGY</a>
+  <span>© 2026 Nova Radiology. All rights reserved.</span>
+ </div>
+</footer>
+
+</body>
+</html>
