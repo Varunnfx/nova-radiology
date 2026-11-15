@@ -165,24 +165,97 @@ flex-wrap:wrap;
 section{padding:55px 0}
 .hero{padding:65px 0}
 }
+/* Unified responsive navigation */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(7,21,34,.97);
+  border-bottom: 1px solid #234258;
+  backdrop-filter: blur(15px);
+}
+.site-nav-inner {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.site-logo {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.site-logo span { color: #43d5e8; }
+.site-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.site-links a {
+  color: #d4e2eb;
+  font-size: 13px;
+}
+.site-links a:hover,
+.site-links a[aria-current="page"] {
+  color: #43d5e8;
+}
+.site-menu-btn {
+  display: none;
+  background: transparent;
+  color: white;
+  border: 1px solid #365267;
+  border-radius: 6px;
+  padding: 8px 13px;
+  font-size: 22px;
+}
+@media(max-width:760px) {
+  .site-menu-btn { display: block; }
+  .site-links {
+    display: none;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    width: 100%;
+    padding: 18px 6%;
+    background: #091b29;
+    border-bottom: 1px solid #234258;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+  .site-links.open { display: flex; }
+  .site-links a { padding: 12px 0; }
+}
 </style>
 </head>
 
 <body>
 
-<nav>
-<div class="container nav">
-<a class="logo" href="index.html">NOVA<span>.</span> RADIOLOGY</a>
-<div class="links">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="team.html">Team</a>
-<a href="contact.html">Contact</a>
-</div>
-</div>
-</nav>
+<nav class="site-nav">
+  <div class="container site-nav-inner">
+    <a class="site-logo" href="index.html">
+      NOVA<span>.</span> RADIOLOGY
+    </a>
 
+    <button class="site-menu-btn"
+      id="siteMenuBtn"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="siteLinks">
+      ☰
+    </button>
+
+    <div class="site-links" id="siteLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </div>
+  </div>
+</nav>
 <header class="hero">
 <div class="container">
 <span class="label">GET IN TOUCH</span>
@@ -339,6 +412,24 @@ btn.disabled=false;
 btn.textContent="Prepare Enquiry →";
 },2500);
 });
+  
+const menuButton = document.getElementById("siteMenuBtn");
+const siteLinks = document.getElementById("siteLinks");
+
+menuButton.addEventListener("click", function() {
+  const isOpen = siteLinks.classList.toggle("open");
+  menuButton.setAttribute("aria-expanded", isOpen);
+  menuButton.textContent = isOpen ? "✕" : "☰";
+});
+
+siteLinks.querySelectorAll("a").forEach(function(link) {
+  link.addEventListener("click", function() {
+    siteLinks.classList.remove("open");
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.textContent = "☰";
+  });
+});
+  
 </script>
 
 </body>
