@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071522">
+<title>Our Team | Nova Radiology</title>
+<style>
+:root{--bg:#071522;--panel:#102538;--cyan:#43d5e8;--white:#f4f8fc;--muted:#a7bac9}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--white);font-family:Arial,sans-serif;line-height:1.7}
+a{color:inherit;text-decoration:none}
+.container{width:88%;max-width:1100px;margin:auto}
+nav{background:#091b29;border-bottom:1px solid #234258}
+.nav{min-height:75px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.logo{font-size:19px;font-weight:800;letter-spacing:1px}
+.logo span{color:var(--cyan)}
+.links{display:flex;gap:18px;font-size:13px}
+.links a:hover{color:var(--cyan)}
+.hero{padding:95px 0;background:radial-gradient(ellipse at 85% 40%,#16475b,transparent 55%),#091b29}
+.label{color:var(--cyan);font-size:12px;letter-spacing:2px;font-weight:bold}
+h1{font-size:clamp(40px,7vw,65px);line-height:1.15;margin:20px 0}
+h1 span{color:var(--cyan)}
+p{color:var(--muted)}
+section{padding:75px 0}
+h2{font-size:34px;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
+.card{background:var(--panel);border:1px solid #234258;border-radius:12px;padding:28px;text-align:center}
+.avatar{width:95px;height:95px;margin:0 auto 18px;border-radius:50%;background:#173e53;border:2px solid var(--cyan);display:grid;place-items:center;font-size:38px;color:var(--cyan)}
+.card h3{margin:10px 0}
+.card p{font-size:14px}
+.dark{background:#0b1d2c}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:25px}
+.value{background:var(--panel);padding:24px;border:1px solid #234258;border-radius:10px}
+.value h3{margin-bottom:10px;color:var(--cyan)}
+.cta{text-align:center;background:#0c2233}
+.cta p{max-width:600px;margin:auto}
+.btn{display:inline-block;background:var(--cyan);color:#071522;padding:12px 22px;border-radius:6px;font-weight:bold;margin-top:22px}
+footer{background:#040d16;padding:30px 0;font-size:12px}
+@media(max-width:650px){
+ .nav{flex-wrap:wrap;padding:15px 0}
+ .links{gap:12px;font-size:11px}
+ .grid,.values{grid-template-columns:1fr}
+ .hero{padding:70px 0}
+ section{padding:55px 0}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="container nav">
+<a class="logo" href="index.html">NOVA<span>.</span> RADIOLOGY</a>
+<div class="links">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="team.html">Team</a>
+<a href="index.html#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<header class="hero">
+<div class="container">
+<span class="label">THE PEOPLE BEHIND THE MISSION</span>
+<h1>Meet Our <span>Team</span></h1>
+<p>Professional expertise, collaboration and technology supporting modern diagnostic imaging.</p>
+</div>
+</header>
+
+<section>
+<div class="container">
+<span class="label">OUR PROFESSIONALS</span>
+<h2>Areas of Expertise</h2>
+<p>Explore the professional roles that contribute to a modern radiology workflow.</p>
+
+<div class="grid">
+<div class="card">
+<div class="avatar">✚</div>
+<h3>Radiologists</h3>
+<p>Qualified medical specialists responsible for professional interpretation of diagnostic images.</p>
+</div>
+
+<div class="card">
+<div class="avatar">◎</div>
+<h3>Clinical Specialists</h3>
+<p>Healthcare professionals supporting clinical coordination and communication.</p>
+</div>
+
+<div class="card">
+<div class="avatar">⌘</div>
+<h3>Technology Team</h3>
+<p>Technical professionals supporting digital systems and healthcare workflows.</p>
+</div>
+
+<div class="card">
+<div class="avatar">◈</div>
+<h3>Operations Team</h3>
+<p>Professionals coordinating operational activities and service processes.</p>
+</div>
+
+<div class="card">
+<div class="avatar">◇</div>
+<h3>Quality Support</h3>
+<p>Support for responsible processes and service quality management.</p>
+</div>
+
+<div class="card">
+<div class="avatar">✧</div>
+<h3>Client Relations</h3>
+<p>Communication and coordination with healthcare partners.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="dark">
+<div class="container">
+<span class="label">OUR CULTURE</span>
+<h2>What Guides Our Team</h2>
+<div class="values">
+<div class="value">
+<h3>Professionalism</h3>
+<p>Respecting expertise, responsibility and professional standards.</p>
+</div>
+<div class="value">
+<h3>Collaboration</h3>
+<p>Working together to support efficient healthcare processes.</p>
+</div>
+<div class="value">
+<h3>Innovation</h3>
+<p>Using technology thoughtfully to improve workflows.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container">
+<span class="label">WORK WITH US</span>
+<h2>Let's Build Better Healthcare Connections</h2>
+<p>Get in touch to discuss professional collaboration and healthcare opportunities.</p>
+<a class="btn" href="index.html#contact">Contact Our Team →</a>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<a class="logo" href="index.html">NOVA<span>.</span> RADIOLOGY</a>
+<p>© 2026 Nova Radiology. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>
